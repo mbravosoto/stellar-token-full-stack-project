@@ -193,39 +193,43 @@ function App() {
       margin: '0 auto',
       fontFamily: 'Arial, sans-serif'
     }}>
-      <h1 style={{ color: '#0088cc' }}>Mi Token BDB</h1>
+      <h1 style={{ color: '#cc006dff' }}>My Token BDB</h1>
       
       {!connected ? (
         <div>
-          <p>Conectá tu wallet para interactuar con el token BDB</p>
+          <p>Welcome! To get started, connect your Freighter wallet and discover your BDB token balance.</p>
           
           <button 
             onClick={connectWallet}
             style={{
               padding: '12px 24px',
               fontSize: '16px',
-              backgroundColor: '#0088cc',
+              backgroundColor: '#92197B', // 🌟 Update button color
               color: 'white',
               border: 'none',
               borderRadius: '8px',
               cursor: 'pointer'
             }}
           >
-            Conectar Wallet
+            Connect Wallet
           </button>
+
+          <h1 style={{ color: '#200468ff' }}>
+            My First DApp Token BDB by Manu 🦈
+          </h1>
         </div>
       ) : (
         <div>
           {/* Información de conexión */}
           <div style={{ 
             padding: '20px', 
-            backgroundColor: '#f0f0f0', 
+            backgroundColor: '#dcc7c7ff', 
             borderRadius: '8px',
             marginTop: '20px'
           }}>
-            <p style={{ fontWeight: 'bold' }}>Conectado como:</p>
+            <p style={{ fontWeight: 'bold' }}>Connected as:</p>
             <code style={{ 
-              backgroundColor: '#fff', 
+              backgroundColor: '#dcc7c7ff', 
               padding: '8px', 
               borderRadius: '4px',
               display: 'block',
@@ -244,14 +248,14 @@ function App() {
               style={{
                 padding: '12px 24px',
                 fontSize: '16px',
-                backgroundColor: loading ? '#ccc' : '#00cc88', // Gris si está cargando
+                backgroundColor: loading ? '#ccc' : '#cca300ff', // Gris si está cargando
                 color: 'white',
                 border: 'none',
                 borderRadius: '8px',
                 cursor: loading ? 'not-allowed' : 'pointer'
               }}
             >
-              {loading ? 'Cargando...' : 'Ver mi Balance BDB'}
+              {loading ? 'Loading...' : 'Check my balance BDB'}
             </button>
 
             {/* NUEVO: Mostrar el balance */}
@@ -263,7 +267,7 @@ function App() {
               textAlign: 'center'
             }}>
               <p style={{ fontSize: '14px', margin: '0 0 8px 0', color: '#666' }}>
-                Balance actual:
+                Current balance:
               </p>
               <p style={{ 
                 fontSize: '32px', 
