@@ -60,19 +60,29 @@ This is the runtime flow triggered when a user clicks the "View My Balance" butt
 ```
 
 ## 🎯 Result
+
 The page shows a button to connect the wallet:
+
 ![Wallet Button](img/waiting_connection.png)
 
+
 It will open Freighter in order to allow connection:
+
 ![Wallet Connected](img/connecting.png)
 
+
 Once connected, the public key will be shown:
+
 ![Wallet Connected](img/connected.png)
 
+
 Another button will be available then to validate the balance in the account:
+
 ![Balance](img/check_balance.png)
 
-It corresponds to the balance validated directly with the Smart Contract.
+
+It corresponds to the balance validated directly with the Smart Contract:
+
 ![Balance Check](img/balance_check.png)
 
 ## 🗂️ Project Structure
